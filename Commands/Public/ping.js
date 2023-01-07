@@ -6,8 +6,8 @@ const {
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName("ping")
-    .setDescription("responds with Pong"),
+    .setName("pong")
+    .setDescription("responds with Pring"),
 
   /**
    *
@@ -15,6 +15,6 @@ module.exports = {
    */
 
   execute(interaction) {
-    interaction.reply({ content: "Pong!", ephemeral: true });
+    interaction.reply({ content: "Ping!", ephemeral: true });
   },
 };

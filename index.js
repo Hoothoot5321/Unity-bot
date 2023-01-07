@@ -26,6 +26,9 @@ loadEvents(client);
 client
   .login(Token)
   .then(() => {
+    module.exports = {
+      botname: client,
+    };
     console.log(`Client logged in as ${client.user.tag}`);
     client.user.setActivity(`with ${client.guilds.cache.size} guilds`);
   })
