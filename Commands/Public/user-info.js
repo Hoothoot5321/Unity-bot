@@ -11,6 +11,11 @@ module.exports = {
         .setDescription("the user you want to get info on")
         .setRequired(false)
     ),
+
+  /**
+   *
+   * @param {ChatInputCommandInteraction} interaction
+   */
   async execute(interaction) {
     const user = interaction.options.getUser("user") || interaction.user;
     const member = await interaction.guild.members.fetch(user.id);

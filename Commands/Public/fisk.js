@@ -8,7 +8,10 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName("embed-test")
     .setDescription("test embeds"),
-
+  /**
+   *
+   * @param {ChatInputCommandInteraction} interaction
+   */
   execute(interaction) {
     const testEmbed = new EmbedBuilder()
       .setColor(0x0099ff)
