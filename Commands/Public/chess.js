@@ -50,7 +50,7 @@ module.exports = {
       console.log(rating);
 
       interaction.reply({
-        content: `${chess_username}'s ${mode_txt} rating is: ${rating}`,
+        content: `${chess_username}'s chess.com ${mode_txt} rating is: ${rating}`,
         ephemeral: false,
       });
     } catch (error) {
