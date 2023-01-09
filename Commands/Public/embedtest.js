@@ -8,7 +8,7 @@ const { botname } = require("../../index.js");
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("embed-test")
-    .setDescription("test embeds"),
+    .setDescription("test  embeds"),
   /**
    *
    * @param {ChatInputCommandInteraction} interaction
